@@ -67,77 +67,89 @@ let backgroundImage = "";
 let seasonColor = "";
 
 switch (FindMonth) {
-  case 11: // December
+  case 0: // December
     season = "Winter";
     backgroundImage = "winterbg.jpg";
     seasonColor = "#00f";
     seasonIndex = 0;
+    break; 
 
   case 0: // January
     season = "Winter";
     backgroundImage = "winterbg.jpg";
     seasonColor = "#00f";
     seasonIndex = 0;
+    break; 
 
   case 0: // Feburary
     season = "Winter";
     backgroundImage = "winterbg.jpg";
     seasonColor = "#00f";
     seasonIndex = 0;
+    break; 
 
   case 1: // March
     season = "Spring";
     backgroundImage = "springbg.jpg";
     seasonColor = "#d7d";
     seasonIndex = 1;
+    break; 
 
   case 1: // April
     season = "Spring";
     backgroundImage = "springbg.jpg";
     seasonColor = "#d7d";
     seasonIndex = 1;
+    break; 
 
   case 2: // May
     season = "Spring";
     backgroundImage = "springbg.jpg";
     seasonColor = "#d7d";
     seasonIndex = 1;
+    break; 
 
   case 3: // June
     season = "Summer";
     backgroundImage = "summerbg.jpg";
     seasonColor = "#006400";
     seasonIndex = 2;
+    break; 
 
   case 3: // July
     season = "Summer";
     backgroundImage = "summerbg.jpg";
     seasonColor = "#006400";
     seasonIndex = 2;
+    break; 
 
   case 3: // August
     season = "Summer";
     backgroundImage = "summerbg.jpg";
     seasonColor = "#006400";
     seasonIndex = 2;
+    break; 
 
   case 4: // September
     season = "Fall";
     backgroundImage = "fallbg.jpg";
     seasonColor = "#930";
     seasonIndex = 3;
+    break;
 
   case 4: // October
     season = "Fall";
     backgroundImage = "fallbg.jpg";
     seasonColor = "#930";
     seasonIndex = 3;
+    break;
 
   case 4: // November
     season = "Fall";
     backgroundImage = "fallbg.jpg";
     seasonColor = "#930";
     seasonIndex = 3;
+    break;
 }
 
 // Apply the background image and color
