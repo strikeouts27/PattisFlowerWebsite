@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open jquery-intro.html",
+            "file": "c:\\Users\\Andrew\\QuickAccess Groups\\Programming projects\\DallasCollege\\Intro_To_Web_Programming\\Intro-to-jQuery\\jquery-intro.html"
+        }
+    ]
+}
