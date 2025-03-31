@@ -44,13 +44,104 @@ var specials = [
 ];
 
 const date = new Date(); 
+const year = date.getFullYear(); 
+
 let FindMonth = date.getMonth();
 // let CurrentMonth = [months[FindMonth]];
-let CurrentMonth = [months[11]];
-console.log(CurrentMonth); 
+let CurrentMonthIndex = [months[FindMonth]];
+console.log(CurrentMonthIndex); 
+let currentMonth = CurrentMonthIndex.toString()
 
-if (CurrentMonth == "December") {
-  let sloganElement = document.getElementById('slogan')
+if (CurrentMonthIndex.toString() == "December") {
+  document.getElementById("slogan"); 
+  $("#slogan").after("<h3>Happy Holidays!</h3>");
 }
 
+$("#month").replaceWith(`<h3 id="month">Tips for ${currentMonth}</h3>`);
+$('#copy').append(`Andrew Stribling ${year}`);
+$("#specials").html(`<h3>Specials</h3>${specials[FindMonth]}`); 
 
+
+// Update the background image and text based on the season
+let backgroundImage = "";
+let seasonColor = "";
+
+switch (FindMonth) {
+  case 11: // December
+    season = "Winter";
+    backgroundImage = "winterbg.jpg";
+    seasonColor = "#00f";
+    seasonIndex = 0;
+
+  case 0: // January
+    season = "Winter";
+    backgroundImage = "winterbg.jpg";
+    seasonColor = "#00f";
+    seasonIndex = 0;
+
+  case 0: // Feburary
+    season = "Winter";
+    backgroundImage = "winterbg.jpg";
+    seasonColor = "#00f";
+    seasonIndex = 0;
+
+  case 1: // March
+    season = "Spring";
+    backgroundImage = "springbg.jpg";
+    seasonColor = "#d7d";
+    seasonIndex = 1;
+
+  case 1: // April
+    season = "Spring";
+    backgroundImage = "springbg.jpg";
+    seasonColor = "#d7d";
+    seasonIndex = 1;
+
+  case 2: // May
+    season = "Spring";
+    backgroundImage = "springbg.jpg";
+    seasonColor = "#d7d";
+    seasonIndex = 1;
+
+  case 3: // June
+    season = "Summer";
+    backgroundImage = "summerbg.jpg";
+    seasonColor = "#006400";
+    seasonIndex = 2;
+
+  case 3: // July
+    season = "Summer";
+    backgroundImage = "summerbg.jpg";
+    seasonColor = "#006400";
+    seasonIndex = 2;
+
+  case 3: // August
+    season = "Summer";
+    backgroundImage = "summerbg.jpg";
+    seasonColor = "#006400";
+    seasonIndex = 2;
+
+  case 4: // September
+    season = "Fall";
+    backgroundImage = "fallbg.jpg";
+    seasonColor = "#930";
+    seasonIndex = 3;
+
+  case 4: // October
+    season = "Fall";
+    backgroundImage = "fallbg.jpg";
+    seasonColor = "#930";
+    seasonIndex = 3;
+
+  case 4: // November
+    season = "Fall";
+    backgroundImage = "fallbg.jpg";
+    seasonColor = "#930";
+    seasonIndex = 3;
+}
+
+// Apply the background image and color
+document.body.style.backgroundImage = `url(${backgroundImage})`;
+document.body.style.color = seasonColor;
+
+console.log(`The season is ${season}.`);
